@@ -1,4 +1,5 @@
 import torch
+from pathlib import Path
 
 def evaluate_model(model: torch.nn.Module,
                    dataloader: torch.utils.data.DataLoader,
@@ -41,3 +42,22 @@ def evaluate_model(model: torch.nn.Module,
       'loss' : loss,
       'accuracy' : acc
   }
+
+def save_model(model: torch.nn.Module,
+               path: str,
+               model_name: str):
+  """
+  Function to save pytorch model as a python dictionary in the
+  specified directory.
+
+  Args:
+    model: the pytorch model to save
+    path: the path of the directory to save in
+    model_name: the name and type of the file
+
+  """
+  directory_path = Path(path)
+  directory_path.mkdir(parents=True, exist_ok=True)
+  model_dir_path = directory_path / model_name
+  assert model_name.endswith('.pth') or model_name.endswith('.pt')
+  torch.save(model.state_dict(), model_dir_path)
