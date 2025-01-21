@@ -33,7 +33,6 @@ def make_dataloaders(
         train_dataset: datasets,
         test_dataset: datasets,
         batch_size: int,
-        num_workers: int,
         shuffle: bool):
     """
     Creating pytorch dataloaders.
@@ -52,13 +51,11 @@ def make_dataloaders(
     train_dataloader = DataLoader(
         dataset=train_dataset,
         batch_size=32,
-        num_workers=1,
         shuffle=True
     )
     test_dataloader = DataLoader(
         dataset=test_dataset,
         batch_size=32,
-        num_workers=1,
         shuffle=False
     )
     return train_dataloader, test_dataloader

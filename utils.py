@@ -47,8 +47,8 @@ def save_model(model: torch.nn.Module,
                path: str,
                model_name: str):
   """
-  Function to save pytorch model as a python dictionary in the
-  specified directory.
+  Function to save pytorch model as a python dictionary of the
+  weights and biases of the layers in the specified directory.
 
   Args:
     model: the pytorch model to save
