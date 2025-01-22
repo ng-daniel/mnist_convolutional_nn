@@ -31,7 +31,7 @@ The training and testing datasets were split into 1875 and 313 (the testing set 
 
 As this is a multiclass classification problem, the ideal loss function is Cross-Entropy Loss, which penalizes confident misclassification and makes it well-suited for classification. The optimization method used is Stochastic Gradient Descent for its overall reliability and faster computation speed with larger datasets.
 
-###### *Fun fact: This project was originally just supposed to be in Google Colab, but because their free version got worse recently (they kicked me out of my session after just one hour!!!) I decided to just set up a conda virtual environment for PyTorch on my machine, which stole an entire afternoon + evening from me :(.*
+###### *Fun / Not Fun Fact: This project was originally just supposed to be in Google Colab, but because their free version got worse recently (they kicked me out of my session after just one hour!!! multiple times!!!) I decided to just set up a conda virtual environment for PyTorch on my machine, which stole an entire afternoon + evening from me :(.*
 
 ## Results
 
@@ -66,4 +66,8 @@ As expected of this dataset, the model performed quite well:
 ###### *Program output when running `train.py` and saving the model to the `models` directory. Results differ slightly from the notebook model due to inherent unpredictability in the training process.* 
 
 ## Conclusions
-By learning how to build, train, and evaluate a neural network from the ground up, I've developed and applied foundational skills and knowledge of machine learning. Though this was a fun project, learning everything by myself through online resources was extremely difficult and took up a lot of my time (like, too much)! I look forward to continuing my learning by putting my abilities to practical use through independent data science projects and, more importantly, working with teams to solve real problems with machine learning. It's not often I feel this way, but I'm really excited about what the future has in store!
+By learning how to build, train, and evaluate a neural network from the ground up, I've gained the foundational machine learning skills and knowledge necessary to pursue more complex and impact-driven endeavors. 
+
+Though this was a fun project, learning everything by myself through online resources was extremely difficult and took up a lot of my time (way too much time). I look forward to continuing my learning by putting my abilities to practical use through independent data science projects and, more importantly, working with teams to solve real problems with machine learning. 
+
+It's not often I feel this way, but I'm really excited about what the future has in store!
