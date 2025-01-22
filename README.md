@@ -9,7 +9,7 @@ The [MNIST dataset](https://en.wikipedia.org/wiki/MNIST_database) is a set of 70
   <img src="https://github.com/user-attachments/assets/4cadecaf-9b3b-42f4-87bf-c73d48631ab7" alt="MNIST dataset sample" width=300 height=300/>
 </p>
 
-###### *25 random samples from the MNIST dataset along with their respective labels*
+###### *25 random samples from the MNIST dataset along with their respective labels.*
 
 ## Model Architecture
 
