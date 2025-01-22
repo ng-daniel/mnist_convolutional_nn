@@ -2,6 +2,10 @@ import torch
 from tqdm.auto import tqdm
 from utils import evaluate_model
 
+"""
+Training and testing functions.
+"""
+
 def train_step(model: torch.nn.Module,
                dataloader: torch.utils.data.DataLoader,
                loss_function: torch.nn,

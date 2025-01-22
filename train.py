@@ -2,12 +2,15 @@ import torch
 from torchmetrics import Accuracy
 import data, model, engine, utils
 
+"""
+The main file for running the program and starting the training process.
+"""
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-NUM_EPOCHS = 3
+NUM_EPOCHS = 5
 BATCH_SIZE = 32
-LEARNING_RATE = 0.001
+LEARNING_RATE = 0.01
 
 train_data, test_data = data.download_MNIST()
 train_dataloader, test_dataloader = data.make_dataloaders(
@@ -21,7 +24,7 @@ model_VGG = model.VGG().to(device)
 
 loss_fn = torch.nn.CrossEntropyLoss().to(device)
 acc_fn = Accuracy(task='multiclass', num_classes=10).to(device)
-optimizer = torch.optim.Adam(params = model_VGG.parameters(), lr = LEARNING_RATE)
+optimizer = torch.optim.SGD(params = model_VGG.parameters(), lr = LEARNING_RATE)
 
 results = engine.train(
     epochs=NUM_EPOCHS,

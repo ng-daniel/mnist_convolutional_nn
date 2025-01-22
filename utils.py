@@ -1,6 +1,10 @@
 import torch
 from pathlib import Path
 
+"""
+Useful utility functions.
+"""
+
 def evaluate_model(model: torch.nn.Module,
                    dataloader: torch.utils.data.DataLoader,
                    loss_function: torch.nn,

@@ -1,10 +1,11 @@
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
-# loading datasets and dataloaders
+"""
+Loads datasets and dataloaders via the torchvision library 
+and Pytorch DataLoaders
+"""
 
-# downloads the dataset from the pytorch torchvision library
-# into training and testing sets
 def download_MNIST():
     """
     Downloads the dataset from the torch datasets library to the data folder
