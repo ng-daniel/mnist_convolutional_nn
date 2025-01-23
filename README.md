@@ -68,6 +68,4 @@ As expected of this dataset, the model performed quite well:
 ## Conclusions
 By learning how to build, train, and evaluate a neural network from the ground up, I've gained the foundational machine learning skills and knowledge necessary to pursue more complex and impact-driven endeavors. 
 
-Though this was a fun project, learning everything by myself through online resources was extremely difficult and took up a lot of my time (way too much time). I look forward to continuing my learning by putting my abilities to practical use through independent data science projects and, more importantly, working with teams to solve real problems with machine learning. 
-
-It's not often I feel this way, but I'm really excited about what the future has in store!
+Though this was a fun project, learning everything by myself through online resources was extremely difficult and took up a lot of my time (way too much time). I look forward to continuing my learning by putting my abilities to practical use through independent data science projects and, more importantly, working with teams to solve real problems with machine learning.
