@@ -31,7 +31,7 @@ The training and testing datasets were split into 1875 and 313 (the testing set 
 
 As this is a multiclass classification problem, the ideal loss function is Cross-Entropy Loss, which penalizes confident misclassification and makes it well-suited for classification. The optimization method used is Stochastic Gradient Descent for its overall reliability and faster computation speed with larger datasets.
 
-###### *Fun / Not Fun Fact: This project was originally just supposed to be in Google Colab, but because their free version got worse recently (they kicked me out of my session after just one hour!!! multiple times!!!) I decided to just set up a conda virtual environment for PyTorch on my machine, which stole an entire afternoon + evening from me :(.*
+###### *Fun / Not Fun Fact: This project was originally just supposed to be in Google Colab, but because their free version got worse recently (they kicked me out of my session after just one hour! multiple times!) I decided to just set up a conda virtual environment for PyTorch on my machine, which ended up taking an entire afternoon + evening to do.*
 
 ## Results
 
